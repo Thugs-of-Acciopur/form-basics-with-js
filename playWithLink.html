@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+
+    <script>
+          const linkTag = document.querySelector('a');
+          
+          linkTag.addEventListener("click", countClicks)
+           
+          let count = 0;
+          function countClicks(event_details){
+                  event_details.preventDefault(); //  a tag shoud open  link, but now it will not open the link
+                // console.log("event_details", event_details) 
+                count++ 
+                console.log("You clicked the link", count, "times")
+          }
+
+    </script>
+</body>
+</html>
+
+
+<!-- function addEventListener(event, fun1){
+   
+    fun1(event_details)
+} -->
+
+
+<!-- let obj = {
+    a:10 , 
+    b: 20
+}
+
+obj.b -->
